@@ -55,6 +55,10 @@ The `pagination` directive uses an external template stored in
 your page and set the `templateUrl` attribute. Note that the `url`
 param can be a scope variable as well as a hard-coded string.
 
+Please Note the actual value of url attribute is enclosed again in single quote as  `url="'http://api.server.com/stuff'"`
+Also you can give a scope variable just url=api_url, if you try to use like url={{api_url}} you will hit upon errors.
+
+
 ### Benefits
 
 * Attaches to anything — ng-repeat, ng-grid, ngTable etc
